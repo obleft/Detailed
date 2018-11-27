@@ -27,19 +27,20 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ane-7y-6oa">
-                                            <rect key="frame" x="137.5" y="8" width="100" height="100"/>
+                                            <rect key="frame" x="137.5" y="10" width="100" height="100"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="100" id="H2E-Bh-sqs"/>
+                                                <constraint firstAttribute="height" constant="100" id="Iif-gM-8e3"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="ane-7y-6oa" firstAttribute="centerX" secondItem="JEb-p0-6NE" secondAttribute="centerX" id="1gQ-le-mfH"/>
-                                        <constraint firstItem="ane-7y-6oa" firstAttribute="top" secondItem="JEb-p0-6NE" secondAttribute="top" constant="8" id="XKi-kh-XoO"/>
-                                        <constraint firstItem="ane-7y-6oa" firstAttribute="centerY" secondItem="JEb-p0-6NE" secondAttribute="centerY" constant="-1.75" id="l8E-Xj-dxe"/>
+                                        <constraint firstItem="ane-7y-6oa" firstAttribute="centerX" secondItem="JEb-p0-6NE" secondAttribute="centerX" id="3my-Yk-gfP"/>
+                                        <constraint firstItem="ane-7y-6oa" firstAttribute="centerY" secondItem="JEb-p0-6NE" secondAttribute="centerY" id="jGJ-fS-eHR"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="imageView" destination="ane-7y-6oa" id="F3y-kh-Zxw"/>
                                     <segue destination="bzE-Q0-aoJ" kind="show" id="piR-XJ-jmB"/>
                                 </connections>
                             </tableViewCell>
@@ -55,19 +56,23 @@
             </objects>
             <point key="canvasLocation" x="292" y="178.56071964017991"/>
         </scene>
-        <!--View Controller-->
+        <!--Detailed View Controller-->
         <scene sceneID="lUK-EY-Rw0">
             <objects>
-                <viewController id="bzE-Q0-aoJ" sceneMemberID="viewController">
+                <viewController id="bzE-Q0-aoJ" customClass="DetailedViewController" customModule="Detailed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ido-9y-fpF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ode-bU-7t0">
-                                <rect key="frame" x="67" y="173" width="241" height="321"/>
+                                <rect key="frame" x="67.5" y="213.5" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="C31-SX-3ah"/>
+                                    <constraint firstAttribute="height" constant="240" id="Ulr-QB-EuS"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2a-Dj-T4X">
-                                <rect key="frame" x="156.5" y="121.5" width="62" height="31.5"/>
+                                <rect key="frame" x="156.5" y="162" width="62" height="31.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -75,15 +80,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Ode-bU-7t0" firstAttribute="leading" secondItem="mWS-hF-eWL" secondAttribute="leading" constant="67" id="ShW-Dl-Mt9"/>
+                            <constraint firstItem="Ode-bU-7t0" firstAttribute="centerX" secondItem="ido-9y-fpF" secondAttribute="centerX" id="Bcz-WZ-58c"/>
                             <constraint firstItem="F2a-Dj-T4X" firstAttribute="centerX" secondItem="ido-9y-fpF" secondAttribute="centerX" id="UOU-Ir-lSw"/>
-                            <constraint firstItem="Ode-bU-7t0" firstAttribute="top" secondItem="F2a-Dj-T4X" secondAttribute="bottom" constant="20" id="ad2-f4-Ig0"/>
-                            <constraint firstItem="Ode-bU-7t0" firstAttribute="centerY" secondItem="ido-9y-fpF" secondAttribute="centerY" id="grs-CH-GGz"/>
-                            <constraint firstItem="Ode-bU-7t0" firstAttribute="centerX" secondItem="ido-9y-fpF" secondAttribute="centerX" id="nwU-Xf-wph"/>
-                            <constraint firstItem="mWS-hF-eWL" firstAttribute="bottom" secondItem="Ode-bU-7t0" secondAttribute="bottom" constant="173" id="wcq-79-eJU"/>
+                            <constraint firstItem="Ode-bU-7t0" firstAttribute="top" secondItem="F2a-Dj-T4X" secondAttribute="bottom" constant="20" id="Y3u-xX-bib"/>
+                            <constraint firstItem="Ode-bU-7t0" firstAttribute="centerY" secondItem="ido-9y-fpF" secondAttribute="centerY" id="wPe-tl-2nU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mWS-hF-eWL"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Ode-bU-7t0" id="07b-Ul-sly"/>
+                        <outlet property="titleLabel" destination="F2a-Dj-T4X" id="Bjs-Xy-rzV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Ex-sz-kck" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
