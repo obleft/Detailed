@@ -41,6 +41,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="imageView" destination="ane-7y-6oa" id="F3y-kh-Zxw"/>
+                                    <outlet property="imageViewInCell" destination="ane-7y-6oa" id="Hr9-6f-Uln"/>
                                     <segue destination="bzE-Q0-aoJ" kind="show" id="piR-XJ-jmB"/>
                                 </connections>
                             </tableViewCell>
