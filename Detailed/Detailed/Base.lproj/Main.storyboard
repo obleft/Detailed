@@ -88,7 +88,7 @@
                         <viewLayoutGuide key="safeArea" id="mWS-hF-eWL"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="Ode-bU-7t0" id="07b-Ul-sly"/>
+                        <outlet property="imageView" destination="Ode-bU-7t0" id="WW9-HC-8gu"/>
                         <outlet property="titleLabel" destination="F2a-Dj-T4X" id="Bjs-Xy-rzV"/>
                     </connections>
                 </viewController>
