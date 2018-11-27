@@ -26,7 +26,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ane-7y-6oa">
+                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ane-7y-6oa">
                                             <rect key="frame" x="137.5" y="10" width="100" height="100"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="100" id="H2E-Bh-sqs"/>
@@ -35,8 +35,8 @@
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="ane-7y-6oa" firstAttribute="centerX" secondItem="JEb-p0-6NE" secondAttribute="centerX" id="3my-Yk-gfP"/>
-                                        <constraint firstItem="ane-7y-6oa" firstAttribute="centerY" secondItem="JEb-p0-6NE" secondAttribute="centerY" id="jGJ-fS-eHR"/>
+                                        <constraint firstItem="ane-7y-6oa" firstAttribute="centerY" secondItem="JEb-p0-6NE" secondAttribute="centerY" id="dKP-Db-yOC"/>
+                                        <constraint firstItem="ane-7y-6oa" firstAttribute="centerX" secondItem="JEb-p0-6NE" secondAttribute="centerX" id="kPD-Pk-S2D"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
